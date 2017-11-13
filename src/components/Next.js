@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { nextCard } from '../actions';
 
-
 class Next extends Component {
   render() {
     return (
       <button onClick={this.props.nextCard} disabled={this.props.disabled} className="Next">
-        Next Card
+        Next
         </button>
     );
   }

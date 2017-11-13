@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-
 class Card extends Component {
 
     render() {
@@ -13,9 +12,7 @@ class Card extends Component {
     }
 }
 
-
 function mapStateToProps(state) {
-
     const card = state.cards[state.currentCardIndex];
     let cardText;
     if (state.isFront) {
@@ -23,11 +20,9 @@ function mapStateToProps(state) {
     } else {
         cardText = card.back;
     }
-
     return {
         text: cardText
     };
 }
-
 
 export default connect(mapStateToProps)(Card);

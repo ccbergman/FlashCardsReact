@@ -1,31 +1,56 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: monospace;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
 }
 
 .Card {
-  border: 3px solid black;
-  margin: 30px 80px;
-  padding: 30px;
-  font-size: 20px;
+  border: none;
+  border-radius: 10%;
+  margin: 0% 3%;
+  padding: 10%;
+  font-size: 25px;
   text-align: center;
-  /* background-color: #b3b3ff; */
-  /* background-color: #99ff99; */
+  width: 30%;
+  background-color: #99ff99;
 }
 
-.Flip {
-
+.CardDirectionals {
+  margin: 3%;
+  display: flex;
+  justify-content: center;
 }
 
-.Next {
-
+.Next, .Prev {
+  background-color: rgb(141, 199, 247);
+  border: none;
+  border-radius: 10%;
+  padding: 1%;
+  margin-top: 12%;
+  margin-bottom: 10%;
+  font-size: 20px;
+  width: 20%;
+  font-family: monospace;
 }
 
-.Prev {
-
+.CardControls {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
 
-.Shuffle {
-  
+.Flip, .Shuffle {
+  background-color: rgb(141, 199, 247);
+  border: none;
+  border-radius: 10%;
+  padding: 1%;
+  margin: 1%;
+  font-size: 20px;
+  width: 20%;
+  font-family: monospace;
 }

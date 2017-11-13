@@ -5,16 +5,20 @@ import Next from './Next';
 import Prev from './Prev';
 import Shuffle from './Shuffle';
 
-
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <Card/>
-      <Prev/>
-      <Flip/>
-      <Shuffle/>
-      <Next/>
+        <h1>Facebook Front-End Flashcards</h1>
+        <div className="CardDirectionals">
+          <Prev />
+          <Card />
+          <Next />
+        </div>
+        <div className="CardControls">
+          <Flip />
+          <Shuffle />
+        </div>
       </div>
     );
   }

@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { prevCard } from '../actions';
 
-
 class Prev extends Component {
   render() {
     return (
       <button onClick={this.props.prevCard} disabled={this.props.disabled} className="Prev">
-        Previous Card
+        Previous
         </button>
     );
   }
