@@ -2,12 +2,12 @@ const INITIAL_STATE = {
     currentCardIndex: 0,
     isFront: true,
     cards: [
-        { front: "A Front", back: "A Back" },
-        { front: "B Front", back: "B Back" },
-        { front: "C Front", back: "C Back" },
-        { front: "D Front", back: "D Back" },
-        { front: "E Front", back: "E Back" },
-        { front: "F Front", back: "F Back" }
+        { front: "What does HTML stand for?", back: "Hypertext Markup Language" },
+        { front: "T/F: GitHub is used for Version Control", back: "True" },
+        { front: "What does NaN stand for?", back: "Not A Number" },
+        { front: "T/F: An exclamation point is referred to as a 'boom'", back: "False, it's referred to as a 'bang'" },
+        { front: "What is the 'magic number' of Connections on LinkedIn?", back: "500+" },
+        { front: "What is the CSS selector for ID='example'?", back: "#example" }
     ]
 }
 
