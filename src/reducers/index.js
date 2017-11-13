@@ -36,27 +36,20 @@ export default function (state = INITIAL_STATE, action) {
             });
 
         case "SHUFFLE_CARDS":
-
             const flashCards = state.cards;
             const newFlashCards = flashCards.map((card) => (
                 card
             ));
-
             let shuffledCards = [];
 
             function selectCard(newFlashCards) {
-
                 let random = newFlashCards[Math.floor(Math.random() * newFlashCards.length)];
                 let removeCard = random;
                 let index = newFlashCards.indexOf(removeCard);
-
                 shuffledCards.push(removeCard);
-
                 newFlashCards.splice(index, 1);
-
                 return newFlashCards;
             }
-
             selectCard(newFlashCards);
             selectCard(newFlashCards);
             selectCard(newFlashCards);
